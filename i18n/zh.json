@@ -1,0 +1,12 @@
+{
+    "payment": "結帳",
+    "creditCardType": "卡別",
+    "creditCardNumber": "卡號",
+    "creditCardHolderName": "持卡人姓名",
+    "creditCardExpirationMonth": "有效月",
+    "creditCardExpirationYear": "有效年",
+    "cardSecurityCode": "安全碼",
+    "total": "金額",
+    "submit": "送出",
+    "reset":"重設"
+}
