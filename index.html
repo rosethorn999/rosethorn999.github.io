@@ -2,46 +2,493 @@
 <html lang="zh-TW">
 
 <head>
-  <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-  <!-- CSS -->
-  <!-- <link rel="stylesheet" href="./css/cssReset.css"> -->
-  <title>rosethorn999</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="./css/reset.css" rel="stylesheet">
+  <link href="./css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <title>Portfolio - Alex Tzeng</title>
 </head>
 
 <body>
-  <header>
-  </header>
-  <div>
-    Hi, I'm rosethorn999.
-    <ul>
-      <li>Angular Portfolio
-        <a href="./porjects/angular2Portfolio/index.html" target="_blank">link</a>
-      </li>
-      <li>Angular Instgram Filter
-        <a href="./porjects/instagramFilter" target="_blank">link</a>
-      </li>
-      <li>Angular Snake Game
-        <a href="./porjects/snake" target="_blank">link</a>
-      </li>
-      <li>Angular Chat Room (with ASP.NET)
-        <a href="./porjects/chatRoom" target="_blank">link</a>
-        <a href="https://github.com/rosethorn999/chatRoomServer" target="_blank">repo</a>
-      </li>
-      <li>Beef Noodle Shop
-        <a href="./porjects/beefNoodleShop/index.html" target="_blank">link</a>
-      </li>
-      <li>Rinka-bikini Calculator
-        <a href="http://measure.rinka.tw" target="_blank">link</a>
-      </li>
-    </ul>
-  </div>
-  <footer>
-  </footer>
+  <div class="bg">
+    <div class="logo"></div>
+    <div class="mobileNavsSW"></div>
+    <div class="bgTitles">
+      <h1>Alex Tzeng</h1>
+      <h2>Software Engineer</h2>
+      <h3>
+        <span class="typingText"></span>
+        <span class="typingCursorWhite">|</span>
+      </h3>
+    </div>
+    <h1 class="nav top" target="top">ABOUT</h1>
+    <h1 class="nav right" target="right">CONTACT</h1>
+    <h1 class="nav bottom" target="bottom">SKILL</h1>
+    <h1 class="nav left" target="left">PROJECT</h1>
+    <div id="navPanel" class="mobileNavs" target="nav">
+      <div class="closePanel top"></div>
+      <ul>
+        <li>
+          <h2 class="mobileNav top" target="top">ABOUT</h>
+        </li>
+        <li>
+          <h2 class="mobileNav right" target="right">CONTACT</h2>
+        </li>
+        <li>
+          <h2 class="mobileNav bottom" target="bottom">SKILL</h2>
+        </li>
+        <li>
+          <h2 class="mobileNav left" target="left">PROJECT</h2>
+        </li>
+      </ul>
+    </div>
+    <div id="topPanel" class="panel" target="top">
+      <div class="closePanel top"></div>
+      <div class="panelContainer">
+        <div class="panelHeader">
+          <h1 class="title">ABOUT</h1>
+          <p class="subTitle"></p>
+        </div>
+        <div class="panelBody">
+          <div class="aboutContainer">
+            <div>
+              <div class="avatars"></div>
+            </div>
+            <div class="introduce">
+              <p>Hi, my name is Alex. I am a software engineer come from Taipei, Taiwan. I have two years experience in programing.
+                And strong knowledge in front-end(Web) development. After office, I usually practise skills or do exercise.
+                Now, I am styuding TensorFlow and Django using python. So, you may check my projects in
+                <a href="javascript:void(0)" target="left" panelSW>PROJECT</a> page. Please feel free to
+                <a href="javascript:void(0)" target="right" panelSW>CONTACT</a> me if you have any question.</p>
+            </div>
+          </div>
+          <div class="center">
+            <h1 class="title">TIMELINE</h1>
+            <p class="subTitle"></p>
+          </div>
+          <div class="timeline">
+            <h2>2017</h2>
+            <ul>
+              <li>
+                <h3>Start new job</h3>
+                <p>I joined the Technical department of Lifecare foundation. We focused on developing system for senior citizens.</p>
+                <time>Oct 2016 ~ Now</time>
+              </li>
+              <li>
+                <h3>Quit job</h3>
+                <p>Leaving for fetching new skill and expansion capacity.</p>
+                <time>July 2017</time>
+              </li>
+            </ul>
+            <h2>2016</h2>
+            <ul>
+              <li>
+                <h3>Start new job</h3>
+                <p>I joined the R&D team of Smart eVision. We focused on developing BI(Business Intelligence) software.</p>
+                <time>Oct 2016</time>
+              </li>
+              <li>
+                <h3>Fulfilled mandatory military service</h3>
+                <p>Civil affairs bureau of New Taipei city.</p>
+                <time>Oct 2016</time>
+              </li>
+            </ul>
+            <h2>2015</h2>
+            <ul>
+              <li>
+                <h3>Fulfilling mandatory military service</h3>
+                <p>Serviced citizen at Civil affairs bureau of New taipei city. Providing documents by population management
+                  system.
+                </p>
+                <time>July 2015</time>
+              </li>
+              <li>
+                <h3>Graduated College</h3>
+                <p>Min Chi University of Technology</p>
+                <time>June 2015</time>
+              </li>
+            </ul>
+            <h2>2014</h2>
+            <ul>
+              <li>
+                <h3>Finished internship</h3>
+                <p>Quit internship form Smart eVision. I possessed some skills of C# and JS this year.</p>
+                <time>June 2014</time>
+              </li>
+            </ul>
+            <h2>2013</h2>
+            <ul>
+              <li>
+                <h3>Start internship</h3>
+                <p>Began internship at Smart eVision. This was the first job of my life. I learned some skills of C# and JS.</p>
+                <time>June 2013</time>
+              </li>
+            </ul>
+          </div>
+          <div class="center">
+            <h1 class="title">SPECIALS</h1>
+            <p class="subTitle"></p>
+          </div>
+          <div class="specialContainer">
+            <div>
+              <div class="specialImg"></div>
+              <div class="specialInfo">
+                <h2>3th place</h2>
+                <p>Student monograph competition host by Ming Chi University of Technology.</p>
+                <p class="time">May 2015</p>
+              </div>
+            </div>
+            <div>
+              <div class="specialImg"></div>
+              <div class="specialInfo">
+                <h2>Honorable mention</h2>
+                <p>Student monograph competition host by Chinese institute of engineers.</p>
+                <p class="time">May 2014</p>
+              </div>
+            </div>
+            <div>
+              <div class="specialImg"></div>
+              <div class="specialInfo">
+                <h2>Recommendation</h2>
+                <p>Outstanding performance in internship by Smart eVision Inc.</p>
+                <p class="time">Sep 2014</p>
+              </div>
+            </div>
+            <div>
+              <div class="specialImg"></div>
+              <div class="specialInfo">
+                <h2>IT Volunteer</h2>
+                <p>Provide the advisory for classmates and departments in university.</p>
+                <p class="time">Sep 2012</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panelFooter">
+        <div class="footerContainer">
+          <div>Made By Alex@2018</div>
+        </div>
+      </div>
+    </div>
+    <div id="rightPanel" class="panel" target="right">
+      <div class="closePanel right"></div>
+      <div class="panelContainer">
+        <div class="panelHeader">
+          <h1 class="title">CONTACT</h1>
+          <p class="subTitle"></p>
+        </div>
+        <div class="panelBody">
+          <div class="contactContainer">
+            <div>
+              <img src="./images/email.png">
+              <a href="mailto:allen972523+portfolio@AT@gmail.com" target="_blank">
+                <img class="emailMask" src="./images/emailText2.png">＠gmail.com</a>
+            </div>
+            <div>
+              <img src="./images/telegram.png">
+              <a href="https://telegram.me/boeing777300" target="_blank">Start Chat</a>
+            </div>
+            <div>
+              <img src="./images/github.png">
+              <a href="https://github.com/rosethorn999" target="_blank">Github</a>
+            </div>
+            <div>
+              <img src="./images/linkedin.png">
+              <a href="https://www.linkedin.com/in/alex-tzeng-409276112" target="_blank">Linkedin</a>
+            </div>
+            <div>
+              <img src="./images/stakeoverflow.png">
+              <a href="https://stackoverflow.com/users/3331396/rosethorn999" target="_blank">Stakeoverflow</a>
+            </div>
+            <div>
+              <img src="./images/wordpress.png">
+              <a href="https://nima2320.wordpress.com/" target="_blank">Blog</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panelFooter">
+        <div class="footerContainer">
+          <div>Made By Alex@2018</div>
+        </div>
+      </div>
+    </div>
+    <div id="bottomPanel" class="panel" target="bottom">
+      <div class="closePanel bottom"></div>
+      <div class="panelContainer">
+        <div class="panelHeader">
+          <h1 class="title">SKILLS</h1>
+          <p class="subTitle"></p>
+          <div class="skillTopContainer">
+            <div class="avatars"></div>
+            <div>
+              <div class="progressBarContainer">
+                <div class="progressBar">
+                  <div class="skillTitle">Self-development</div>
+                  <div class="skillValue skillA">100%</div>
+                </div>
+                <div class="progressBar">
+                  <div class="skillTitle">Frontend</div>
+                  <div class="skillValue skillB">95%</div>
+                </div>
+                <div class="progressBar">
+                  <div class="skillTitle">Backend</div>
+                  <div class="skillValue skillC">40%</div>
+                </div>
+                <div class="progressBar">
+                  <div class="skillTitle">BI Industry Know-how</div>
+                  <div class="skillValue skillD">70%</div>
+                </div>
+                <div class="progressBar">
+                  <div class="skillTitle">Medical industry Know-how</div>
+                  <div class="skillValue skillE">60%</div>
+                </div>
+                <div class="progressBar">
+                  <div class="skillTitle">IOT Know-how</div>
+                  <div class="skillValue skillF">20%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="panelBody">
+          <div class="center">
+            <h1 class="title">SKILLS</h1>
+            <p class="subTitle"></p>
+          </div>
+          <div class="skillContainer">
+            <div>
+              <img class="skillImg" src="./images/if_computer_299053.png" />
+              <h2>Frontend development</h2>
+              <p>I can build a website using the least technical like Angular& Vue.js framework. Provide interactable effect
+                and process data smoothly between backend service.</p>
+            </div>
+            <div>
+              <img class="skillImg" src="./images/if_computer_299053.png" />
+              <h2>Data visualization</h2>
+              <p>I had made some interactable web controls (word-could, bubble-chart) using D3.js. In addition I had rich experience
+                in map plugin like Google Map& AMAP.</p>
+            </div>
+            <div>
+              <img class="skillImg" src="./images/if_computer_299053.png" />
+              <h2>C# language development</h2>
+              <p>I had rich experience in Html & Excel converter (with rich styles). In addition I had build a realtime chatroom
+                service using C# on IIS.</p>
+            </div>
+            <div>
+              <img class="skillImg" src="./images/if_computer_299053.png" />
+              <h2>Python language development</h2>
+              <p>I am studying Tensorflow using python with partners.</p>
+            </div>
+            <div>
+              <img class="skillImg" src="./images/if_computer_299053.png" />
+              <h2>Web Host</h2>
+              <p>I had run a VMS on Google compute engine using CentOS 7. Achieved skills etc: CDN, Domain control.</p>
+            </div>
+            <div>
+              <img class="skillImg" src="./images/if_computer_299053.png" />
+              <h2>ERP Application</h2>
+              <p>Certified by Digiwin ERP system.</p>
+            </div>
+            <div>
+              <img class="skillImg" src="./images/if_computer_299053.png" />
+              <h2>Arduino</h2>
+              <p>I had developed the plants auto-watering system with Arduino. In addition using ESP8266 to share signal to
+                could.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panelFooter">
+        <div class="footerContainer">
+          <div>Made By Alex@2018</div>
+        </div>
+      </div>
+    </div>
+    <div id="leftPanel" class="panel" target="left">
+      <div class="closePanel left"></div>
+      <div class="panelContainer">
+        <div class="panelHeader">
+          <h1 class="title">PROJECT</h1>
+          <div>
+            <p class="subTitle"></p>
+            <div class="filters filtersEvent">
+              <button filter="" class="active">All</button>
+              <button filter="fe">Frontend</button>
+              <button filter="be">Backend</button>
+              <button filter="ml">Machine Learning</button>
+            </div>
+          </div>
+        </div>
+        <div class="panelBody">
+          <div class="projectContainer">
+            <div>
+              <div class="projectImgBox">
+                <img class="projectImg" src="./images/snapshots/beefNoodleShop.png" />
+                <div class="projectInfo">
+                  <h2>Beef Noodle Shop</h2>
+                  <p>Build a commercial site to introduce foods with UI/UX partner. Fashion styles make food much delicious.</p>
+                  <a href="https://rosethorn999.github.io/projects/beefNoodleShop" target="_blank">
+                    <img src="./images/link.png" />
+                  </a>
+                </div>
+              </div>
+              <div class="projectTitle">
+                <h1>Beef Noodle Shop
+                  <a class="projectLink" href="https://rosethorn999.github.io/projects/beefNoodleShop" target="_blank">
+                    <img src="./images/linkStyle2.png" />
+                  </a>
+                </h1>
+              </div>
+              <div class="filters" type="fe">
+                <button>HTML</button>
+                <button>FB Plugin</button>
+                <button>Map plugin</button>
+              </div>
+            </div>
 
-  <!-- Optional JavaScript -->
-  <!-- <script src="./js/info.js"></script> -->
+            <div>
+              <div class="projectImgBox">
+                <img class="projectImg" src="./images/snapshots/snakeGame.png" />
+                <div class="projectInfo">
+                  <h2>Snake</h2>
+                  <p>Build a classic game SNAKE by Angular framework. Moving elements smoothly to simulate animation effect.</p>
+                  <a href="https://rosethorn999.github.io/projects/snake" target="_blank">
+                    <img src="./images/link.png" />
+                  </a>
+                </div>
+              </div>
+              <div class="projectTitle">
+                <h1>Snake
+                  <a class="projectLink" href="https://rosethorn999.github.io/projects/snake" target="_blank">
+                    <img src="./images/linkStyle2.png" />
+                  </a>
+                </h1>
+              </div>
+              <div class="filters" type="fe">
+                <button>HTML</button>
+                <button>Angular</button>
+                <button>Game</button>
+              </div>
+            </div>
+
+            <div>
+              <div class="projectImgBox">
+                <img class="projectImg" src="./images/snapshots/instagramFilter.png" />
+                <div class="projectInfo">
+                  <h2>Instagram Filter</h2>
+                  <p>Build a instagram-style filter by Angular framework. Using CSS3 filter attributes to control it.</p>
+                  <a href="https://rosethorn999.github.io/projects/instagramFilter" target="_blank">
+                    <img src="./images/link.png" />
+                  </a>
+                </div>
+              </div>
+              <div class="projectTitle">
+                <h1>Instagram Filter
+                  <a class="projectLink" href="https://rosethorn999.github.io/projects/instagramFilter" target="_blank">
+                    <img src="./images/linkStyle2.png" />
+                  </a>
+                </h1>
+              </div>
+              <div class="filters" type="fe">
+                <button>HTML</button>
+                <button>CSS3</button>
+                <button>Angular</button>
+              </div>
+            </div>
+
+            <div>
+              <div class="projectImgBox">
+                <img class="projectImg" src="./images/snapshots/bikiniSizer.png" />
+                <div class="projectInfo">
+                  <h2>Bikini Sizer</h2>
+                  <p>Build a bikini sizer to help customer fit the best size on online shop.</p>
+                  <a href="http://measure.rinka.tw">
+                    <img src="./images/link.png" />
+                  </a>
+                </div>
+              </div>
+              <div class="projectTitle">
+                <h1>Bikini Sizer
+                  <a class="projectLink" href="http://measure.rinka.tw" target="_blank">
+                    <img src="./images/linkStyle2.png" />
+                  </a>
+                </h1>
+              </div>
+              <div class="filters" type="fe;be">
+                <button>GCP</button>
+                <button>GA</button>
+                <button>CDN</button>
+                <button>Bootstrap</button>
+                <button>Vue.js</button>
+              </div>
+            </div>
+
+            <div>
+              <div class="projectImgBox">
+                <img class="projectImg" src="./images/snapshots/chatRoom.png" />
+                <div class="projectInfo">
+                  <h2>Chat Room</h2>
+                  <p>Build a multiplayer chat serive(realtime) by Angular framework with ASP.NET service on IIS.</p>
+                  <a href="https://rosethorn999.github.io/projects/chatRoom/#/chathome" target="_blank">
+                    <img src="./images/link.png" />
+                  </a>
+                </div>
+              </div>
+              <div class="projectTitle">
+                <h1>Chat Room
+                  <a class="projectLink" href="https://rosethorn999.github.io/projects/chatRoom/#/chathome" target="_blank">
+                    <img src="./images/linkStyle2.png" />
+                  </a>
+                </h1>
+              </div>
+              <div class="filters" type="fe;be">
+                <button>ASP.NET</button>
+                <button>WebSocket</button>
+                <button>Bootstrap</button>
+                <button>Vue.js</button>
+              </div>
+            </div>
+
+            <div>
+              <div class="projectImgBox">
+                <img class="projectImg" src="./images/snapshots/volvoCart.png" />
+                <div class="projectInfo">
+                  <h2>Cart& Payment</h2>
+                  <p>Build a car shop by Angular. After keyin payment info, it will send a request to test database.</p>
+                  <a href="https://rosethorn999.github.io/projects/angular2Portfolio" target="_blank">
+                    <img src="./images/link.png" />
+                  </a>
+                </div>
+              </div>
+              <div class="projectTitle">
+                <h1>Cart& Payment
+                  <a class="projectLink" href="https://rosethorn999.github.io/projects/angular2Portfolio" target="_blank">
+                    <img src="./images/linkStyle2.png" />
+                  </a>
+                </h1>
+              </div>
+              <div class="filters" type="fe;be">
+                <button>Angular</button>
+                <button>i18n</button>
+                <button>JsonBin</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panelFooter">
+        <div class="footerContainer">
+          <div>Made By Alex@2018</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/index.js"></script>
 </body>
 
 </html>
