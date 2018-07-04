@@ -134,7 +134,7 @@ window.onload = function () {
         targetElem.style["opacity"] = 1;
         clearInterval(movePanel);
       } else {
-        let subValue = Math.abs(offset) > 200 ? 50 : 10; //快要撞到了就要踩剎車            
+        let subValue = Math.abs(offset) > 200 ? 10 : 5; //快要撞到了就要踩剎車            
         targetElem.style[target] = Math.abs(offset) - subValue + "px";
         if (o < 1) {
           targetElem.style["opacity"] = o + 0.1;
