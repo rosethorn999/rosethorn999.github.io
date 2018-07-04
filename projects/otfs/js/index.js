@@ -84,6 +84,8 @@ $(document).ready(function () {
         // console.log("dragenter");
         let layer = document.querySelector(".layer");
         layer.classList.add("active");
+        let body = document.querySelector(".main");
+        body.style.filter = "blur(2px)";
       },
       dragover: function (e) {
         // console.log("dragover");
@@ -98,19 +100,43 @@ $(document).ready(function () {
 
         var dt = e.dataTransfer;
         var files = dt.files;
-        this.handleFiles(files);
+        if (this.isFile(files)) {
+          that.handleFiles(files);
+        }
         let layer = document.querySelector(".layer");
         layer.classList.remove("active");
+        let body = document.querySelector(".main");
+        body.style.filter = "blur(0px)";
       },
       dragleave: function (e) {
         // console.log("dragleave");
-        if (this.dragging) {
-          let layer = document.querySelector(".layer");
-          layer.classList.remove("active");
+        if (e.x === 0 && e.y === 0) { //真的滑出視窗才要關掉layer
+          if (this.dragging) {
+            let layer = document.querySelector(".layer");
+            layer.classList.remove("active");
+            let body = document.querySelector(".main");
+            body.style.filter = "blur(0px)";
+          }
         }
         this.dragging = false;
         e.stopPropagation();
         e.preventDefault();
+      },
+      isFile: function (f) {
+        let ret = true;
+        if (f.length === 0) {
+          ret = false;
+        }
+
+        for (let i = 0; i < f.length; i++) {
+          if (!f[i] || f[i].length === 0 || f[i].size === 0) {
+            ret = false;
+          }
+        }
+        if (ret === false) {
+          this.errMsgs.push("Something worng on File , please retry.");
+        }
+        return ret;
       },
       getBase64: function (file, index, f) {
         var reader = new FileReader();
@@ -120,15 +146,9 @@ $(document).ready(function () {
           f(r);
         };
         reader.onerror = function (error) {
-          that.errMsgs.push(JSON.stringify(error));
+          that.errMsgs.push("Error: " + error.target.error.message);
           console.log("Error: ", error);
         };
-        // reader.onprogress = function(progressEvent) {
-        //   if (progressEvent.lengthComputable) {
-        //     let percentCompleted = Math.floor(progressEvent.loaded * 100 / progressEvent.total);
-        //     that.percentCompleted_base64[index] = percentCompleted;
-        //   }
-        // };
       },
     },
     created: function () {
