@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Lato', '微軟正黑體', 'sans-serif' !important;
+    background-color: rgb(24 30 28);
+    color: #fff;
+}
