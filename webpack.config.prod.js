@@ -4,6 +4,7 @@ const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
 // const BundleAnalyzerPlugin =
 //     require('webpack-bundle-analyzer').BundleAnalyzerPlugin
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
   entry: './src/index.ts',
@@ -38,7 +39,13 @@ module.exports = {
       {
         test: /\.css$/i,
         include: path.resolve(__dirname, 'src'),
-        use: ['style-loader', 'css-loader', 'postcss-loader'],
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+          },
+          'css-loader',
+          'postcss-loader',
+        ],
       },
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -57,6 +64,7 @@ module.exports = {
   optimization: {
     minimizer: [
       '...',
+      new CssMinimizerPlugin(),
       new ImageMinimizerPlugin({
         minimizer: {
           implementation: ImageMinimizerPlugin.imageminMinify,
