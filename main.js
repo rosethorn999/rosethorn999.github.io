@@ -1,1 +1,0 @@
-(()=>{"use strict";var e,t,n,r,o;e=new Date,t=new Date(2019,10,13),n=e.getFullYear()-t.getFullYear()-1,r=Math.abs(e.getMonth()+(12-t.getMonth())+1),(o=window.document.querySelector("#currentJobPeriod"))&&(o.innerText="".concat(n," yrs ").concat(r," mos"))})();
