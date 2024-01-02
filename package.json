@@ -9,7 +9,7 @@
     "server": "node server.js",
     "build": "webpack --config webpack.config.prod.js",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages --cname www.nodm.app -d dist"
   },
   "repository": {
     "type": "git",
