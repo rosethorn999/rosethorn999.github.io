@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth font-sans bg-stone-900 text-white">
+<!doctype html>
+<html lang="en" class="scroll-smooth bg-stone-900 font-sans text-white">
   <head>
     <meta charset="utf-8" />
     <meta author="Alex Tzeng" content="A software engineer" />
@@ -42,16 +42,16 @@
 
   <body>
     <div
-      class="relative flex flex-wrap h-screen bg-[url('./images/IMG_3025_v2.jpg?as=webp')] bg-no-repeat bg-cover bg-right lg:bg-none"
+      class="relative flex h-screen flex-wrap bg-[url('./images/IMG_3025_v2.jpg?as=webp')] bg-cover bg-right bg-no-repeat lg:bg-none"
     >
       <div
-        class="w-full h-full backdrop-brightness-75 pt-[65vh] px-8 md:pt-[35vh] lg:px-64 lg:w-2/3 lg:pt-[40vh]"
+        class="h-full w-full px-8 pt-[65vh] backdrop-brightness-75 md:pt-[35vh] lg:w-2/3 lg:px-64 lg:pt-[40vh]"
       >
         <p class="mb-1">Hi <span>🖐</span> my name is</p>
-        <h1 class="text-5xl text-extend-teal font-bold mb-5">Alex Tzeng</h1>
-        <h2 class="text-2xl font-bold mb-5">Software Engineer</h2>
+        <h1 class="mb-5 text-5xl font-bold text-extend-teal">Alex Tzeng</h1>
+        <h2 class="mb-5 text-2xl font-bold">Software Engineer</h2>
         <nav
-          class="flex gap-5 mb-5 lg:absolute lg:w-5 lg:h-1/3 lg:bottom-0 lg:left-24 lg:flex-col lg:flex-nowrap lg:mb-0"
+          class="mb-5 flex gap-5 lg:absolute lg:bottom-0 lg:left-24 lg:mb-0 lg:h-1/3 lg:w-5 lg:flex-col lg:flex-nowrap"
         >
           <a href="mailto:alex@nodm.app" target="_blank" aria-label="mailto">
             <img
@@ -114,22 +114,22 @@
               height="100%"
             />
           </a>
-          <div class="hidden lg:block bg-white w-px h-full m-auto"></div>
+          <div class="m-auto hidden h-full w-px bg-white lg:block"></div>
         </nav>
         <p>
           <a
             href="#aboutme"
-            class="border-2 px-5 py-1 rounded-full border-extend-red hover:shadow-[0px_0px_8px_#f72a50] transition"
+            class="rounded-full border-2 border-extend-red px-5 py-1 transition hover:shadow-[0px_0px_8px_#f72a50]"
           >
-            More<span class="ml-4 text-extend-red font-extrabold">⇾</span>
+            More<span class="ml-4 font-extrabold text-extend-red">⇾</span>
           </a>
         </p>
       </div>
       <div
-        class="h-screen w-0 lg:w-1/3 lg:bg-[url('./images/IMG_3025_v2.jpg?as=webp')] bg-no-repeat bg-cover bg-right"
+        class="h-screen w-0 bg-cover bg-right bg-no-repeat lg:w-1/3 lg:bg-[url('./images/IMG_3025_v2.jpg?as=webp')]"
       ></div>
     </div>
-    <nav class="absolute top-0 p-5 flex lg:px-24">
+    <nav class="absolute top-0 flex p-5 lg:px-24">
       <a href="#">
         <img
           src="./images/logo.svg"
@@ -142,46 +142,46 @@
     </nav>
     <div class="relative px-8 lg:px-64">
       <div id="aboutme">
-        <h2 class="text-5xl font-bold my-12">
+        <h2 class="my-12 text-5xl font-bold">
           ABOUT <span class="text-extend-red">ME</span>
         </h2>
         <div
-          class="flex flex-wrap justify-start font-bold mb-24 text-center gap-4 lg:gap-0"
+          class="mb-24 flex flex-wrap justify-start gap-4 text-center font-bold lg:gap-0"
         >
           <div class="basis-full lg:basis-1/3">
             <img
-              class="w-12 mx-auto mb-4 opacity-90 hover:opacity-100"
+              class="mx-auto mb-4 w-12 opacity-90 hover:opacity-100"
               src="./images/work_32.png?as=webp"
               alt="work"
               loading="lazy"
               width="3rem"
               height="3rem"
             />
-            <h3 class="text-xl mb-2">Experience</h3>
+            <h3 class="mb-2 text-xl">Experience</h3>
             <h3 class="text-3xl text-extend-teal">7 years</h3>
           </div>
           <div class="basis-full lg:basis-1/3">
             <img
-              class="w-12 mx-auto mb-4 opacity-90 hover:opacity-100"
+              class="mx-auto mb-4 w-12 opacity-90 hover:opacity-100"
               src="./images/ph_code-bold.png?as=webp"
               alt="codeTag"
               loading="lazy"
               width="3rem"
               height="3rem"
             />
-            <h3 class="text-xl mb-2">Develop project</h3>
+            <h3 class="mb-2 text-xl">Develop project</h3>
             <h3 class="text-3xl text-extend-teal">6+ projects</h3>
           </div>
           <div class="basis-full lg:basis-1/3">
             <img
-              class="w-12 mx-auto mb-4 opacity-90 hover:opacity-100"
+              class="mx-auto mb-4 w-12 opacity-90 hover:opacity-100"
               src="./images/ph_code-bold.png?as=webp"
               alt="codeTag"
               loading="lazy"
               width="3rem"
               height="3rem"
             />
-            <h3 class="text-xl mb-2">Side project</h3>
+            <h3 class="mb-2 text-xl">Side project</h3>
             <h3 class="text-3xl text-extend-teal">6+ projects</h3>
           </div>
         </div>
@@ -212,21 +212,21 @@
           personal growth.
         </p>
         <br />
-        <p class="text-ellipsis mb-24">
+        <p class="mb-24 text-ellipsis">
           Outside of work, I enjoy approaching problems with a first principles
           mindset. This approach not only brings me joy and fulfillment but also
           allows me to explore the world in a meaningful way. If you can't find
           me in front of a computer, you can probably find me on nearby trails.
           I'll most likely be out for a jog, enjoying the beauty of nature.
         </p>
-        <div class="text-3xl font-extrabold mb-8">
+        <div class="mb-8 text-3xl font-extrabold">
           <span
-            class="bg-clip-text text-transparent bg-gradient-to-r from-sky-400 to-red-600"
+            class="bg-gradient-to-r from-sky-400 to-red-600 bg-clip-text text-transparent"
           >
             PERSONAL INFO
           </span>
         </div>
-        <div class="flex flex-row flex-wrap gap-y-5 mb-24">
+        <div class="mb-24 flex flex-row flex-wrap gap-y-5">
           <div class="basis-full lg:basis-1/2">
             <p class="text-xl">
               <span class="text-gray-300">Name:</span>
@@ -266,21 +266,21 @@
             </p>
           </div>
         </div>
-        <div class="text-3xl font-extrabold mb-8">
+        <div class="mb-8 text-3xl font-extrabold">
           <span
-            class="bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-yellow-300"
+            class="bg-gradient-to-r from-pink-400 to-yellow-300 bg-clip-text text-transparent"
           >
             SKILL
           </span>
         </div>
-        <h3 class="font-bold my-6 text-xl">Frontend</h3>
-        <div class="flex flex-row flex-wrap justify-start items-center gap-5">
+        <h3 class="my-6 text-xl font-bold">Frontend</h3>
+        <div class="flex flex-row flex-wrap items-center justify-start gap-5">
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/js_32.png?as=webp"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="js"
               loading="lazy"
               width="2rem"
@@ -291,11 +291,11 @@
             <p class="text-gray-300">projects use</p>
           </div>
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/react.svg"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="react"
               loading="lazy"
               width="2rem"
@@ -306,11 +306,11 @@
             <p class="text-gray-300">projects use</p>
           </div>
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/VscodeIconsFileTypeTypescript.svg"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="vue"
               loading="lazy"
               width="2rem"
@@ -321,11 +321,11 @@
             <p class="text-gray-300">projects use</p>
           </div>
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/LogosVue.svg"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="vue"
               loading="lazy"
               width="2rem"
@@ -336,11 +336,11 @@
             <p class="text-gray-300">projects use</p>
           </div>
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/icons8-next.js-48.png?as=webp"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="next"
               loading="lazy"
               width="2rem"
@@ -351,11 +351,11 @@
             <p class="text-gray-300">projects use</p>
           </div>
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/icons8-angularjs-48.png?as=webp"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="angularjs"
               loading="lazy"
               width="2rem"
@@ -367,16 +367,16 @@
           </div>
         </div>
 
-        <h3 class="font-bold my-6 text-xl">Backend</h3>
+        <h3 class="my-6 text-xl font-bold">Backend</h3>
         <div
-          class="flex flex-row flex-wrap justify-arostartund items-center gap-5"
+          class="justify-arostartund flex flex-row flex-wrap items-center gap-5"
         >
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/python_32.png?as=webp"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="python"
               loading="lazy"
               width="2rem"
@@ -387,11 +387,11 @@
             <p class="text-gray-300">projects use</p>
           </div>
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/net_32.png?as=webp"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt=".netCsharp"
               loading="lazy"
               width="2rem"
@@ -402,11 +402,11 @@
             <p class="text-gray-300">projects use</p>
           </div>
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/LogosFlask.svg"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="flask"
               loading="lazy"
               width="2rem"
@@ -417,11 +417,11 @@
             <p class="text-gray-300">projects use</p>
           </div>
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/LogosPostgresql.svg"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="postgresql"
               loading="lazy"
               width="2rem"
@@ -432,11 +432,11 @@
             <p class="text-gray-300">projects use</p>
           </div>
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/VscodeIconsFileTypeDjango.svg"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="django"
               loading="lazy"
               width="2rem"
@@ -447,11 +447,11 @@
             <p class="text-gray-300">projects use</p>
           </div>
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/LogosRedis.svg"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="redis"
               loading="lazy"
               width="2rem"
@@ -462,14 +462,14 @@
             <p class="text-gray-300">projects use</p>
           </div>
         </div>
-        <h3 class="font-bold my-6 text-xl">Others</h3>
-        <div class="flex flex-row flex-wrap justify-start items-center gap-5">
+        <h3 class="my-6 text-xl font-bold">Others</h3>
+        <div class="flex flex-row flex-wrap items-center justify-start gap-5">
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/docker_32.png?as=webp"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="docker"
               loading="lazy"
               width="2rem"
@@ -480,11 +480,11 @@
             <p class="text-gray-300">projects use</p>
           </div>
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/icons8-google-cloud-platform-48.png?as=webp"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="gcp"
               loading="lazy"
               width="2rem"
@@ -495,11 +495,11 @@
             <p class="text-gray-300">projects use</p>
           </div>
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/cypress.svg"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="cypress"
               loading="lazy"
               width="2rem"
@@ -511,11 +511,11 @@
           </div>
 
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/MaterialSymbolsFinanceChip.svg"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="fintech"
               loading="lazy"
               width="2rem"
@@ -526,11 +526,11 @@
             <p class="text-gray-300">projects use</p>
           </div>
           <div
-            class="flex flex-col justify-center text-center shadow-[0px_0px_4px_#f72a50] px-4 py-4 basis-36 h-36 lg:basis-48 lg:h-48"
+            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
           >
             <img
               src="./images/icons8-amazon-web-services-48.png?as=webp"
-              class="w-8 mx-auto opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 hover:opacity-100"
               alt="gcp"
               loading="lazy"
               width="2rem"
@@ -544,23 +544,23 @@
         <div class="h-24"></div>
         <div class="text-3xl font-extrabold">
           <span
-            class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-yellow-400"
+            class="bg-gradient-to-r from-green-400 to-yellow-400 bg-clip-text text-transparent"
           >
             EXPERIENCE
           </span>
         </div>
         <div class="h-8"></div>
         <div id="timeline" class="flex gap-x-5">
-          <div class="flex-none w-12">
-            <div class="bg-extend-red w-px h-full m-auto"></div>
+          <div class="w-12 flex-none">
+            <div class="m-auto h-full w-px bg-extend-red"></div>
           </div>
-          <div class="grow w-full flex flex-wrap gap-10">
-            <div class="basis-full relative">
+          <div class="flex w-full grow flex-wrap gap-10">
+            <div class="relative basis-full">
               <div
-                class="rounded-full bg-extend-red absolute -left-[4.25rem] top-0 w-12 h-12 flex justify-center items-center"
+                class="absolute -left-[4.25rem] top-0 flex h-12 w-12 items-center justify-center rounded-full bg-extend-red"
               >
                 <img
-                  class="w-6 h-6 opacity-90 hover:opacity-100"
+                  class="h-6 w-6 opacity-90 hover:opacity-100"
                   src="./images/work_32.png?as=webp"
                   alt="work"
                   loading="lazy"
@@ -568,16 +568,16 @@
                   height="1.5rem"
                 />
               </div>
-              <h3 class="text-lg mb-2">
+              <h3 class="mb-2 text-lg">
                 <span id="currentJobPeriod">3 yrs 6 mos</span>
                 &nbsp;
                 <span class="text-extend-red"> 2019 - 2023 </span>
               </h3>
-              <h3 class="text-extend-teal text-xl font-bold">
+              <h3 class="text-xl font-bold text-extend-teal">
                 Software Engineer
               </h3>
               <p class="mb-2">- Trend Micro</p>
-              <ul class="list-disc list-inside">
+              <ul class="list-inside list-disc">
                 <li>
                   Developed an expense solution with React.js and Formily (a
                   low-code framework) in Microsoft Teams, which supports
@@ -597,12 +597,12 @@
                 </li>
               </ul>
             </div>
-            <div class="basis-full relative">
+            <div class="relative basis-full">
               <div
-                class="rounded-full bg-extend-red absolute -left-[4.25rem] top-0 w-12 h-12 flex justify-center items-center"
+                class="absolute -left-[4.25rem] top-0 flex h-12 w-12 items-center justify-center rounded-full bg-extend-red"
               >
                 <img
-                  class="w-6 h-6 opacity-90 hover:opacity-100"
+                  class="h-6 w-6 opacity-90 hover:opacity-100"
                   src="./images/work_32.png?as=webp"
                   alt="work"
                   loading="lazy"
@@ -610,15 +610,15 @@
                   height="1.5rem"
                 />
               </div>
-              <h3 class="text-lg mb-2">
+              <h3 class="mb-2 text-lg">
                 2 yrs 5 mos &nbsp;
                 <span class="text-extend-red"> 2017 - 2019 </span>
               </h3>
-              <h3 class="text-extend-teal text-xl font-bold">
+              <h3 class="text-xl font-bold text-extend-teal">
                 Frontend Engineer
               </h3>
               <p class="mb-2">- Carenet Plus</p>
-              <ul class="list-disc list-inside">
+              <ul class="list-inside list-disc">
                 <li>
                   Built web-based senior care system with reporting, form
                   generation, alarm, and tracking functionality, achieving 30%
@@ -636,12 +636,12 @@
                 </li>
               </ul>
             </div>
-            <div class="basis-full relative">
+            <div class="relative basis-full">
               <div
-                class="rounded-full bg-extend-red absolute -left-[4.25rem] top-0 w-12 h-12 flex justify-center items-center"
+                class="absolute -left-[4.25rem] top-0 flex h-12 w-12 items-center justify-center rounded-full bg-extend-red"
               >
                 <img
-                  class="w-6 h-6 opacity-90 hover:opacity-100"
+                  class="h-6 w-6 opacity-90 hover:opacity-100"
                   src="./images/work_32.png?as=webp"
                   alt="work"
                   loading="lazy"
@@ -649,15 +649,15 @@
                   height="1.5rem"
                 />
               </div>
-              <h3 class="text-lg mb-2">
+              <h3 class="mb-2 text-lg">
                 1 yr &nbsp;
                 <span class="text-extend-red"> 2016 - 2017 </span>
               </h3>
-              <h3 class="text-extend-teal text-xl font-bold">
+              <h3 class="text-xl font-bold text-extend-teal">
                 Software Engineer
               </h3>
               <p class="mb-2">- Smart eVision</p>
-              <ul class="list-disc list-inside">
+              <ul class="list-inside list-disc">
                 <li>
                   Developed draggable D3.js web controls that increased BI
                   dashboard data visualization.
@@ -672,12 +672,12 @@
                 </li>
               </ul>
             </div>
-            <div class="basis-full relative">
+            <div class="relative basis-full">
               <div
-                class="rounded-full bg-extend-red absolute -left-[4.25rem] top-0 w-12 h-12 flex justify-center items-center"
+                class="absolute -left-[4.25rem] top-0 flex h-12 w-12 items-center justify-center rounded-full bg-extend-red"
               >
                 <img
-                  class="w-6 h-6 opacity-90 hover:opacity-100"
+                  class="h-6 w-6 opacity-90 hover:opacity-100"
                   src="./images/graduate_32.png?as=webp"
                   alt="graduate"
                   loading="lazy"
@@ -685,15 +685,15 @@
                   height="1.5rem"
                 />
               </div>
-              <h3 class="text-lg mb-2">
+              <h3 class="mb-2 text-lg">
                 4 yrs &nbsp;
                 <span class="text-extend-red"> 2011 - 2015 </span>
               </h3>
-              <h3 class="text-extend-teal text-xl font-bold">
+              <h3 class="text-xl font-bold text-extend-teal">
                 Ming Chi University of Technology
               </h3>
               <p class="mb-2">- Bachelor of Science</p>
-              <ul class="list-disc list-inside">
+              <ul class="list-inside list-disc">
                 <li>
                   Computer Programming, System Analysis& Design, Database, Human
                   Factors Engineering, E-Commerce, Smart factory, Factors
@@ -708,15 +708,15 @@
       </div>
       <div class="h-36"></div>
       <div id="project">
-        <h2 class="text-5xl font-bold my-12">Project</h2>
+        <h2 class="my-12 text-5xl font-bold">Project</h2>
         <div class="flex flex-col gap-4">
           <div
-            class="flex flex-wrap flex-row basis-full p-8 gap-2 lg:gap-28 lg:flex-nowrap hover:shadow-[0px_0px_4px_#f72a50] group transition"
+            class="group flex basis-full flex-row flex-wrap gap-2 p-8 transition hover:shadow-[0px_0px_4px_#f72a50] lg:flex-nowrap lg:gap-28"
           >
-            <div class="basis-full flex lg:basis-1/2">
+            <div class="flex basis-full lg:basis-1/2">
               <img
                 src="./images/snapshots/gympool.png?as=webp"
-                class="aspect-video rounded opacity-90 m-auto group-hover:opacity-100 transition"
+                class="m-auto aspect-video rounded opacity-90 transition group-hover:opacity-100"
                 alt="snapshots-gympool"
                 loading="lazy"
                 width="100%"
@@ -732,7 +732,7 @@
                 >
                   <img
                     src="./images/github.svg"
-                    class="w-8 inline-block opacity-90 hover:opacity-100"
+                    class="inline-block w-8 opacity-90 hover:opacity-100"
                     alt="github"
                     loading="lazy"
                     width="2rem"
@@ -746,7 +746,7 @@
                 >
                   <img
                     src="./images/IcBaselineOpenInNew.svg"
-                    class="w-8 inline-block opacity-90 hover:opacity-100"
+                    class="inline-block w-8 opacity-90 hover:opacity-100"
                     alt="openInNew"
                     loading="lazy"
                     width="2rem"
@@ -755,60 +755,60 @@
                 </a>
               </div>
               <div class="mb-2">
-                <h3 class="text-2xl text-extend-red mb-2">Gym Pool</h3>
+                <h3 class="mb-2 text-2xl text-extend-red">Gym Pool</h3>
 
-                <p class="text-ellipsis mb-8">
+                <p class="mb-8 text-ellipsis">
                   Developed a hobby side project provide a full-stack web
                   application to facilitate sale in used gym contracts.
                 </p>
-                <div class="flex gap-2 flex-wrap text-xs">
+                <div class="flex flex-wrap gap-2 text-xs">
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     Next.js
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     React</span
                   >
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     TailwindCSS
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     Python
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     FastAPI
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     PostgreSQL
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     NGINX
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     Docker
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     CI/CD
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     GCR
                   </span>
@@ -817,12 +817,12 @@
             </div>
           </div>
           <div
-            class="flex flex-wrap flex-row basis-full p-8 gap-2 lg:gap-28 lg:flex-nowrap hover:shadow-[0px_0px_4px_#f72a50] group transition"
+            class="group flex basis-full flex-row flex-wrap gap-2 p-8 transition hover:shadow-[0px_0px_4px_#f72a50] lg:flex-nowrap lg:gap-28"
           >
-            <div class="basis-full flex lg:basis-1/2">
+            <div class="flex basis-full lg:basis-1/2">
               <img
                 src="./images/snapshots/algoTrading.png?as=webp"
-                class="aspect-video rounded opacity-90 m-auto group-hover:opacity-100 transition"
+                class="m-auto aspect-video rounded opacity-90 transition group-hover:opacity-100"
                 alt="snapshots-algoTrading"
                 loading="lazy"
                 width="100%"
@@ -838,7 +838,7 @@
                 >
                   <img
                     src="./images/icons8-invisible-30.png?as=webp"
-                    class="w-8 inline-block opacity-90 hover:opacity-100"
+                    class="inline-block w-8 opacity-90 hover:opacity-100"
                     alt="private"
                     loading="lazy"
                     width="2rem"
@@ -847,42 +847,42 @@
                 </span>
               </div>
               <div class="mb-2">
-                <h3 class="text-2xl text-extend-red mb-2">
+                <h3 class="mb-2 text-2xl text-extend-red">
                   Algorithmic trading
                 </h3>
 
-                <p class="text-ellipsis mb-8">
+                <p class="mb-8 text-ellipsis">
                   Developed a Python program using web crawler and backtracking
                   to implement pre-defined strategy.
                 </p>
-                <div class="flex gap-2 flex-wrap text-xs">
+                <div class="flex flex-wrap gap-2 text-xs">
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     Python
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     TA-Lib
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     Pandas
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     Flask
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     PostgreSQL
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     NGINX
                   </span>
@@ -891,12 +891,12 @@
             </div>
           </div>
           <div
-            class="flex flex-wrap flex-row basis-full p-8 gap-2 lg:gap-28 lg:flex-nowrap hover:shadow-[0px_0px_4px_#f72a50] group transition"
+            class="group flex basis-full flex-row flex-wrap gap-2 p-8 transition hover:shadow-[0px_0px_4px_#f72a50] lg:flex-nowrap lg:gap-28"
           >
-            <div class="basis-full flex lg:basis-1/2">
+            <div class="flex basis-full lg:basis-1/2">
               <img
                 src="./images/snapshots/zhuyin2pinyin.png?as=webp"
-                class="aspect-video rounded opacity-90 m-auto group-hover:opacity-100 transition"
+                class="m-auto aspect-video rounded opacity-90 transition group-hover:opacity-100"
                 alt="snapshots-zhuyin2pinyin"
                 loading="lazy"
                 width="100%"
@@ -912,7 +912,7 @@
                 >
                   <img
                     src="./images/github.svg"
-                    class="w-8 inline-block opacity-90 hover:opacity-100"
+                    class="inline-block w-8 opacity-90 hover:opacity-100"
                     alt="github"
                     loading="lazy"
                     width="2rem"
@@ -926,7 +926,7 @@
                 >
                   <img
                     src="./images/IcBaselineOpenInNew.svg"
-                    class="w-8 inline-block opacity-90 hover:opacity-100"
+                    class="inline-block w-8 opacity-90 hover:opacity-100"
                     alt="openInNew"
                     loading="lazy"
                     width="2rem"
@@ -935,31 +935,31 @@
                 </a>
               </div>
               <div class="mb-2">
-                <h3 class="text-2xl text-extend-red mb-2">Zhuyin2pinyin</h3>
-                <p class="text-ellipsis mb-8">
+                <h3 class="mb-2 text-2xl text-extend-red">Zhuyin2pinyin</h3>
+                <p class="mb-8 text-ellipsis">
                   It's a great way for beginners to learn Pinyin IME by
                   converting Zhuyin to Pinyin. It's easy to use and convenient,
                   so you can focus on learning Pinyin base on your experience on
                   Zhuyin.
                 </p>
-                <div class="flex gap-2 flex-wrap text-xs">
+                <div class="flex flex-wrap gap-2 text-xs">
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     Vue.js
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     SPA
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     Tool
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     Learning
                   </span>
@@ -968,12 +968,12 @@
             </div>
           </div>
           <div
-            class="flex flex-wrap flex-row basis-full p-8 gap-2 lg:gap-28 lg:flex-nowrap hover:shadow-[0px_0px_4px_#f72a50] group transition"
+            class="group flex basis-full flex-row flex-wrap gap-2 p-8 transition hover:shadow-[0px_0px_4px_#f72a50] lg:flex-nowrap lg:gap-28"
           >
-            <div class="basis-full flex lg:basis-1/2">
+            <div class="flex basis-full lg:basis-1/2">
               <img
                 src="./images/snapshots/snakeGame.png?as=webp"
-                class="aspect-video rounded opacity-90 m-auto group-hover:opacity-100 transition"
+                class="m-auto aspect-video rounded opacity-90 transition group-hover:opacity-100"
                 alt="snapshots-snakeGame"
                 loading="lazy"
                 width="100%"
@@ -989,7 +989,7 @@
                 >
                   <img
                     src="./images/github.svg"
-                    class="w-8 inline-block opacity-90 hover:opacity-100"
+                    class="inline-block w-8 opacity-90 hover:opacity-100"
                     alt="github"
                     loading="lazy"
                     width="2rem"
@@ -1003,7 +1003,7 @@
                 >
                   <img
                     src="./images/IcBaselineOpenInNew.svg"
-                    class="w-8 inline-block opacity-90 hover:opacity-100"
+                    class="inline-block w-8 opacity-90 hover:opacity-100"
                     alt="openInNew"
                     loading="lazy"
                     width="2rem"
@@ -1012,19 +1012,19 @@
                 </a>
               </div>
               <div class="mb-2">
-                <h3 class="text-2xl text-extend-red mb-2">Snake</h3>
-                <p class="text-ellipsis mb-8">
+                <h3 class="mb-2 text-2xl text-extend-red">Snake</h3>
+                <p class="mb-8 text-ellipsis">
                   A classic game SNAKE implemented by Angular framework. Moving
                   block elements smoothly to simulate animation effect.
                 </p>
-                <div class="flex gap-2 flex-wrap text-xs">
+                <div class="flex flex-wrap gap-2 text-xs">
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     Angular
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     Game
                   </span>
@@ -1033,12 +1033,12 @@
             </div>
           </div>
           <div
-            class="flex flex-wrap flex-row basis-full p-8 gap-2 lg:gap-28 lg:flex-nowrap hover:shadow-[0px_0px_4px_#f72a50] group transition"
+            class="group flex basis-full flex-row flex-wrap gap-2 p-8 transition hover:shadow-[0px_0px_4px_#f72a50] lg:flex-nowrap lg:gap-28"
           >
-            <div class="basis-full flex lg:basis-1/2">
+            <div class="flex basis-full lg:basis-1/2">
               <img
                 src="./images/snapshots/my-bike.png?as=webp"
-                class="aspect-video rounded opacity-90 m-auto group-hover:opacity-100 transition"
+                class="m-auto aspect-video rounded opacity-90 transition group-hover:opacity-100"
                 alt="snapshots-my-bike"
                 loading="lazy"
                 width="100%"
@@ -1054,7 +1054,7 @@
                 >
                   <img
                     src="./images/github.svg"
-                    class="w-8 inline-block opacity-90 hover:opacity-100"
+                    class="inline-block w-8 opacity-90 hover:opacity-100"
                     alt="github"
                     loading="lazy"
                     width="2rem"
@@ -1068,7 +1068,7 @@
                 >
                   <img
                     src="./images/IcBaselineOpenInNew.svg"
-                    class="w-8 inline-block opacity-90 hover:opacity-100"
+                    class="inline-block w-8 opacity-90 hover:opacity-100"
                     alt="openInNew"
                     loading="lazy"
                     width="2rem"
@@ -1077,31 +1077,31 @@
                 </a>
               </div>
               <div class="mb-2">
-                <h3 class="text-2xl text-extend-red mb-2">
+                <h3 class="mb-2 text-2xl text-extend-red">
                   Routing for shared bike
                 </h3>
-                <p class="text-ellipsis mb-8">
+                <p class="mb-8 text-ellipsis">
                   A quick tool to checkout YouBike(a shared bike system)
                   stations with customize route. 🚴
                 </p>
-                <div class="flex gap-2 flex-wrap text-xs">
+                <div class="flex flex-wrap gap-2 text-xs">
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     React.js
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     Tool
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     SPA
                   </span>
                   <span
-                    class="px-2 py-0.5 rounded-full shadow-[0px_0px_4px_#f72a50]"
+                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
                   >
                     Dark Mode
                   </span>
