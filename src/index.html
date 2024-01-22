@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth bg-stone-900 font-sans text-white">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="utf-8" />
     <meta author="Alex Tzeng" content="A software engineer" />
@@ -22,7 +22,7 @@
     <meta property="og:image:height" content="300" />
 
     <title>Alex Tzeng - Portfolio</title>
-    <link rel="icon" href="./images/logo.svg" />
+    <link rel="icon" href="./images/logo.svg?as=webp" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <!-- Google tag (gtag.js) -->
     <script
@@ -40,23 +40,73 @@
     </script>
   </head>
 
-  <body>
+  <body
+    class="bg-white font-sans text-black transition dark:bg-stone-900 dark:text-white"
+  >
     <div
-      class="relative flex h-screen flex-wrap bg-[url('./images/IMG_3025_v2.jpg?as=webp')] bg-cover bg-right bg-no-repeat lg:bg-none"
+      class="relative flex h-svh flex-wrap bg-[url('./images/bg.jpeg?as=webp')] bg-cover bg-center bg-no-repeat lg:bg-none"
     >
       <div
-        class="h-full w-full px-8 pt-[65vh] backdrop-brightness-75 md:pt-[35vh] lg:w-2/3 lg:px-64 lg:pt-[40vh]"
+        class="absolute bottom-12 w-full px-8 md:pt-[35h-svh] lg:static lg:w-2/3 lg:px-64 lg:pt-[50svh]"
       >
-        <p class="mb-1">Hi <span>🖐</span> my name is</p>
-        <h1 class="mb-5 text-5xl font-bold text-extend-teal">Alex Tzeng</h1>
-        <h2 class="mb-5 text-2xl font-bold">Software Engineer</h2>
-        <nav
-          class="mb-5 flex gap-5 lg:absolute lg:bottom-0 lg:left-24 lg:mb-0 lg:h-1/3 lg:w-5 lg:flex-col lg:flex-nowrap"
+        <p class="mb-1 text-white lg:text-black dark:lg:text-white">
+          Hi <span>🖐</span> my name is
+        </p>
+        <h1
+          class="mb-5 text-5xl font-bold text-blue-200 dark:text-extend-teal lg:text-blue-700"
         >
-          <a href="mailto:alex@nodm.app" target="_blank" aria-label="mailto">
+          Alex Tzeng
+        </h1>
+        <h2
+          class="mb-5 text-2xl font-bold text-white lg:text-black dark:lg:text-white"
+        >
+          Software Engineer
+        </h2>
+        <p class="mb-10 text-white lg:text-black dark:lg:text-white">
+          <a
+            href="#aboutme"
+            class="rounded-full border-2 border-blue-700 px-5 py-1 transition hover:shadow-[0px_0px_8px] hover:shadow-blue-700 dark:border-extend-red dark:shadow-extend-red"
+          >
+            More<span
+              class="ml-4 font-extrabold text-blue-700 dark:text-extend-red"
+              >⇾</span
+            >
+          </a>
+        </p>
+        <nav
+          class="flex items-end justify-around gap-5 md:justify-normal lg:absolute lg:bottom-0 lg:left-24 lg:mb-0 lg:h-1/2 lg:w-6 lg:flex-col lg:flex-nowrap"
+        >
+          <div class="h-12">
+            <button
+              id="themeSwitcher"
+              class="relative h-12 w-7 rounded-full border-2 p-1 shadow-inner dark:border-white lg:border-stone-900"
+            >
+              <img
+                src="./images/sun.svg?as=webp"
+                class="absolute right-0.5 top-1 block w-5 invert transition-all duration-300 ease-in-out hover:opacity-100 dark:top-5 dark:opacity-0 dark:invert-0"
+                alt="sun"
+                width="100%"
+                height="100%"
+              />
+              <img
+                src="./images/moon.svg?as=webp"
+                class="absolute right-0.5 top-1 block w-5 opacity-0 invert-0 transition-all duration-300 ease-in-out dark:top-5 dark:opacity-90 dark:hover:opacity-100"
+                alt="moon"
+                width="100%"
+                height="100%"
+              />
+            </button>
+          </div>
+
+          <a
+            href="mailto:alex@nodm.app"
+            target="_blank"
+            aria-label="mailto"
+            class="h-7 w-7"
+          >
             <img
-              src="./images/mail.svg"
-              class="opacity-90 hover:opacity-100"
+              src="./images/mail.svg?as=webp"
+              class="opacity-90 hover:opacity-100 dark:invert-0 lg:invert"
               alt="mail"
               width="100%"
               height="100%"
@@ -66,10 +116,11 @@
             href="https://github.com/rosethorn999"
             target="_blank"
             aria-label="github"
+            class="h-7 w-7"
           >
             <img
-              src="./images/github.svg"
-              class="opacity-90 hover:opacity-100"
+              src="./images/github.svg?as=webp"
+              class="opacity-90 hover:opacity-100 dark:invert-0 lg:invert"
               alt="github"
               width="100%"
               height="100%"
@@ -79,10 +130,11 @@
             href="https://www.linkedin.com/in/alex-tzeng-swe/"
             target="_blank"
             aria-label="linkedin"
+            class="h-7 w-7"
           >
             <img
-              src="./images/linkedin.svg"
-              class="opacity-90 hover:opacity-100"
+              src="./images/linkedin.svg?as=webp"
+              class="opacity-90 hover:opacity-100 dark:invert-0 lg:invert"
               alt="linkedin"
               width="100%"
               height="100%"
@@ -92,48 +144,44 @@
             href="https://stackoverflow.com/users/3331396"
             target="_blank"
             aria-label="stackoverflow"
+            class="h-7 w-7"
           >
             <img
-              src="./images/stackoverflow.svg"
-              class="opacity-90 hover:opacity-100"
+              src="./images/stackoverflow.svg?as=webp"
+              class="opacity-90 hover:opacity-100 dark:invert-0 lg:invert"
               alt="stackoverflow"
               width="100%"
               height="100%"
             />
           </a>
           <a
-            href="https://nima2320.wordpress.com/"
+            href="https://nima3320.wordpress.com/"
             target="_blank"
             aria-label="wordpress"
+            class="h-7 w-7"
           >
             <img
-              src="./images/blog.svg"
-              class="opacity-90 hover:opacity-100"
+              src="./images/blog.svg?as=webp"
+              class="opacity-90 hover:opacity-100 dark:invert-0 lg:invert"
               alt="blog"
               width="100%"
               height="100%"
             />
           </a>
-          <div class="m-auto hidden h-full w-px bg-white lg:block"></div>
+          <div
+            class="m-auto hidden h-full w-px bg-black dark:bg-white lg:block"
+          ></div>
         </nav>
-        <p>
-          <a
-            href="#aboutme"
-            class="rounded-full border-2 border-extend-red px-5 py-1 transition hover:shadow-[0px_0px_8px_#f72a50]"
-          >
-            More<span class="ml-4 font-extrabold text-extend-red">⇾</span>
-          </a>
-        </p>
       </div>
       <div
-        class="h-screen w-0 bg-cover bg-right bg-no-repeat lg:w-1/3 lg:bg-[url('./images/IMG_3025_v2.jpg?as=webp')]"
+        class="h-svh w-0 rounded bg-cover bg-center bg-no-repeat backdrop-brightness-75 lg:w-1/3 lg:bg-[url('./images/bg.jpeg?as=webp')]"
       ></div>
     </div>
     <nav class="absolute top-0 flex p-5 lg:px-24">
       <a href="#">
         <img
-          src="./images/logo.svg"
-          class="h-12 opacity-90 hover:opacity-100"
+          src="./images/logo.svg?as=webp"
+          class="h-12 opacity-90 invert hover:opacity-100 dark:lg:invert-0"
           alt="logo"
           width="48px"
           height="48px"
@@ -141,51 +189,62 @@
       </a>
     </nav>
     <div class="relative px-8 lg:px-64">
-      <div id="aboutme">
-        <h2 class="my-12 text-5xl font-bold">
-          ABOUT <span class="text-extend-red">ME</span>
+      <div>
+        <h2 class="my-20 text-5xl font-bold">
+          <a id="aboutme" href="#aboutme">
+            ABOUT <span class="text-blue-700 dark:text-extend-red">ME</span></a
+          >
         </h2>
         <div
-          class="mb-24 flex flex-wrap justify-start gap-4 text-center font-bold lg:gap-0"
+          class="mb-24 flex flex-wrap justify-start gap-8 text-center font-bold lg:gap-0"
         >
           <div class="basis-full lg:basis-1/3">
             <img
-              class="mx-auto mb-4 w-12 opacity-90 hover:opacity-100"
-              src="./images/work_32.png?as=webp"
+              class="mx-auto mb-4 w-12 opacity-90 invert hover:opacity-100 dark:invert-0"
+              src="./images/work_32.svg?as=webp"
               alt="work"
               loading="lazy"
               width="3rem"
               height="3rem"
             />
             <h3 class="mb-2 text-xl">Experience</h3>
-            <h3 class="text-3xl text-extend-teal">7 years</h3>
+            <h3 class="text-3xl text-blue-700 dark:text-extend-teal">
+              7
+              <span class="text-2xl"> years</span>
+            </h3>
           </div>
           <div class="basis-full lg:basis-1/3">
             <img
-              class="mx-auto mb-4 w-12 opacity-90 hover:opacity-100"
-              src="./images/ph_code-bold.png?as=webp"
+              class="mx-auto mb-4 w-12 opacity-90 invert hover:opacity-100 dark:invert-0"
+              src="./images/ph_code-bold.svg?as=webp"
               alt="codeTag"
               loading="lazy"
               width="3rem"
               height="3rem"
             />
             <h3 class="mb-2 text-xl">Develop project</h3>
-            <h3 class="text-3xl text-extend-teal">6+ projects</h3>
+            <h3 class="text-3xl text-blue-700 dark:text-extend-teal">
+              6+
+              <span class="text-2xl"> projects</span>
+            </h3>
           </div>
           <div class="basis-full lg:basis-1/3">
             <img
-              class="mx-auto mb-4 w-12 opacity-90 hover:opacity-100"
-              src="./images/ph_code-bold.png?as=webp"
+              class="mx-auto mb-4 w-12 opacity-90 invert hover:opacity-100 dark:invert-0"
+              src="./images/ph_code-bold.svg?as=webp"
               alt="codeTag"
               loading="lazy"
               width="3rem"
               height="3rem"
             />
             <h3 class="mb-2 text-xl">Side project</h3>
-            <h3 class="text-3xl text-extend-teal">6+ projects</h3>
+            <h3 class="text-3xl text-blue-700 dark:text-extend-teal">
+              6+
+              <span class="text-2xl"> projects</span>
+            </h3>
           </div>
         </div>
-        <p class="text-ellipsis">
+        <p class="text-ellipsis font-bold">
           Experienced Full-stack Engineer | JavaScript & Python | Agile
           Development
         </p>
@@ -212,7 +271,7 @@
           personal growth.
         </p>
         <br />
-        <p class="mb-24 text-ellipsis">
+        <p class="text-ellipsis">
           Outside of work, I enjoy approaching problems with a first principles
           mindset. This approach not only brings me joy and fulfillment but also
           allows me to explore the world in a meaningful way. If you can't find
@@ -220,23 +279,26 @@
           I'll most likely be out for a jog, enjoying the beauty of nature.
         </p>
         <div class="mb-8 text-3xl font-extrabold">
-          <span
+          <div class="h-24"></div>
+          <a
+            id="personal-info"
+            href="#personal-info"
             class="bg-gradient-to-r from-sky-400 to-red-600 bg-clip-text text-transparent"
           >
             PERSONAL INFO
-          </span>
+          </a>
         </div>
-        <div class="mb-24 flex flex-row flex-wrap gap-y-5">
+        <div class="mb-24 flex flex-row flex-wrap gap-y-4 lg:gap-y-5">
           <div class="basis-full lg:basis-1/2">
             <p class="text-xl">
-              <span class="text-gray-300">Name:</span>
-              <span class="ml-2">Alex</span>
+              <span class="dark:text-gray-300">Name:</span>
+              <span class="ml-2 font-bold">Alex</span>
             </p>
           </div>
           <div class="basis-full lg:basis-1/2">
             <p class="text-xl">
-              <span class="text-gray-300">Email:</span>
-              <span class="ml-2">
+              <span class="dark:text-gray-300">Email:</span>
+              <span class="ml-2 font-bold">
                 <a
                   href="mailto:alex@nodm.app"
                   target="_blank"
@@ -249,38 +311,42 @@
           </div>
           <div class="basis-full lg:basis-1/2">
             <p class="text-xl">
-              <span class="text-gray-300">Language:</span>
-              <span class="ml-2">English, Mandarin</span>
+              <span class="dark:text-gray-300">Language:</span>
+              <span class="ml-2 font-bold">English, Mandarin</span>
             </p>
           </div>
           <div class="basis-full lg:basis-1/2">
             <p class="text-xl">
-              <span class="text-gray-300">Location:</span>
-              <span class="ml-2">Sacramento, CA</span>
+              <span class="dark:text-gray-300">Location:</span>
+              <span class="ml-2 font-bold">Sacramento, CA</span>
             </p>
           </div>
           <div class="basis-full lg:basis-1/2">
             <p class="text-xl">
-              <span class="text-gray-300">Permit:</span>
-              <span class="ml-2">Authorized to work for any US employer</span>
+              <span class="dark:text-gray-300">Permit:</span>
+              <span class="ml-2 font-bold"
+                >Authorized to work for any US employer</span
+              >
             </p>
           </div>
         </div>
-        <div class="mb-8 text-3xl font-extrabold">
-          <span
+        <div class="text-3xl font-extrabold">
+          <a
+            id="skill"
+            href="#skill"
             class="bg-gradient-to-r from-pink-400 to-yellow-300 bg-clip-text text-transparent"
           >
             SKILL
-          </span>
+          </a>
         </div>
         <h3 class="my-6 text-xl font-bold">Frontend</h3>
         <div class="flex flex-row flex-wrap items-center justify-start gap-5">
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
               src="./images/js_32.png?as=webp"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 group-hover:opacity-100"
               alt="js"
               loading="lazy"
               width="2rem"
@@ -288,14 +354,14 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">JavaScript</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">10+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
-              src="./images/react.svg"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              src="./images/react.svg?as=webp"
+              class="mx-auto w-8 opacity-90 group-hover:opacity-100"
               alt="react"
               loading="lazy"
               width="2rem"
@@ -303,14 +369,14 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">React.js</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">10+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
-              src="./images/VscodeIconsFileTypeTypescript.svg"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              src="./images/VscodeIconsFileTypeTypescript.svg?as=webp"
+              class="mx-auto w-8 opacity-90 group-hover:opacity-100"
               alt="vue"
               loading="lazy"
               width="2rem"
@@ -318,14 +384,14 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">Typescript</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">5+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
-              src="./images/LogosVue.svg"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              src="./images/LogosVue.svg?as=webp"
+              class="mx-auto w-8 opacity-90 group-hover:opacity-100"
               alt="vue"
               loading="lazy"
               width="2rem"
@@ -333,14 +399,14 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">Vue.js</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">5+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
               src="./images/icons8-next.js-48.png?as=webp"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 invert group-hover:opacity-100 dark:invert-0"
               alt="next"
               loading="lazy"
               width="2rem"
@@ -348,14 +414,14 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">Next.js</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">2+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
               src="./images/icons8-angularjs-48.png?as=webp"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 group-hover:opacity-100"
               alt="angularjs"
               loading="lazy"
               width="2rem"
@@ -363,20 +429,19 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">Angular.js</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">1</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
         </div>
-
         <h3 class="my-6 text-xl font-bold">Backend</h3>
         <div
           class="justify-arostartund flex flex-row flex-wrap items-center gap-5"
         >
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
               src="./images/python_32.png?as=webp"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 group-hover:opacity-100"
               alt="python"
               loading="lazy"
               width="2rem"
@@ -384,14 +449,14 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">Python</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">5+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
               src="./images/net_32.png?as=webp"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 group-hover:opacity-100"
               alt=".netCsharp"
               loading="lazy"
               width="2rem"
@@ -399,14 +464,14 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">ASP.Net C#</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">5+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
-              src="./images/LogosFlask.svg"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              src="./images/LogosFlask.svg?as=webp"
+              class="mx-auto w-8 opacity-90 invert group-hover:opacity-100 dark:invert-0"
               alt="flask"
               loading="lazy"
               width="2rem"
@@ -414,14 +479,14 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">Flask</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">5+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
-              src="./images/LogosPostgresql.svg"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              src="./images/LogosPostgresql.svg?as=webp"
+              class="mx-auto w-8 opacity-90 group-hover:opacity-100"
               alt="postgresql"
               loading="lazy"
               width="2rem"
@@ -429,14 +494,14 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">PostgreSQL</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">5+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
-              src="./images/VscodeIconsFileTypeDjango.svg"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              src="./images/VscodeIconsFileTypeDjango.svg?as=webp"
+              class="mx-auto w-8 opacity-90 group-hover:opacity-100"
               alt="django"
               loading="lazy"
               width="2rem"
@@ -444,14 +509,14 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">Django</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">2+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
-              src="./images/LogosRedis.svg"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              src="./images/LogosRedis.svg?as=webp"
+              class="mx-auto w-8 opacity-90 group-hover:opacity-100"
               alt="redis"
               loading="lazy"
               width="2rem"
@@ -459,17 +524,17 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">Redis</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">2+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
         </div>
         <h3 class="my-6 text-xl font-bold">Others</h3>
         <div class="flex flex-row flex-wrap items-center justify-start gap-5">
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
               src="./images/docker_32.png?as=webp"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 group-hover:opacity-100"
               alt="docker"
               loading="lazy"
               width="2rem"
@@ -477,14 +542,14 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">Docker</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">10+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
               src="./images/icons8-google-cloud-platform-48.png?as=webp"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 group-hover:opacity-100"
               alt="gcp"
               loading="lazy"
               width="2rem"
@@ -492,14 +557,14 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">GCP</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">5+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
-              src="./images/cypress.svg"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              src="./images/cypress.svg?as=webp"
+              class="mx-auto w-8 opacity-90 group-hover:opacity-100"
               alt="cypress"
               loading="lazy"
               width="2rem"
@@ -507,15 +572,15 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">Cypress</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">2+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
 
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
-              src="./images/MaterialSymbolsFinanceChip.svg"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              src="./images/MaterialSymbolsFinanceChip.svg?as=webp"
+              class="mx-auto w-8 opacity-90 invert group-hover:opacity-100 dark:invert-0"
               alt="fintech"
               loading="lazy"
               width="2rem"
@@ -523,14 +588,14 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">Fintech</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">2+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
           <div
-            class="flex h-36 basis-36 flex-col justify-center px-4 py-4 text-center shadow-[0px_0px_4px_#f72a50] lg:h-48 lg:basis-48"
+            class="p4 dark:shadow-extend-dark-shadow group flex h-36 basis-36 flex-col justify-center text-center shadow-[0px_0px_3px] shadow-blue-700 lg:h-48 lg:basis-48"
           >
             <img
               src="./images/icons8-amazon-web-services-48.png?as=webp"
-              class="mx-auto w-8 opacity-90 hover:opacity-100"
+              class="mx-auto w-8 opacity-90 group-hover:opacity-100"
               alt="gcp"
               loading="lazy"
               width="2rem"
@@ -538,30 +603,34 @@
             />
             <p class="mb-2 lg:mb-4 lg:text-xl">AWS</p>
             <h4 class="mb-1 text-2xl lg:mb-4 lg:text-3xl">2+</h4>
-            <p class="text-gray-300">projects use</p>
+            <p class="dark:text-gray-300">projects use</p>
           </div>
         </div>
         <div class="h-24"></div>
         <div class="text-3xl font-extrabold">
-          <span
+          <a
+            href="#experience"
+            id="experience"
             class="bg-gradient-to-r from-green-400 to-yellow-400 bg-clip-text text-transparent"
           >
             EXPERIENCE
-          </span>
+          </a>
         </div>
         <div class="h-8"></div>
         <div id="timeline" class="flex gap-x-5">
           <div class="w-12 flex-none">
-            <div class="m-auto h-full w-px bg-extend-red"></div>
+            <div
+              class="darl:bg-extend-red m-auto h-full w-px bg-blue-700 dark:bg-extend-red"
+            ></div>
           </div>
           <div class="flex w-full grow flex-wrap gap-10">
             <div class="relative basis-full">
               <div
-                class="absolute -left-[4.25rem] top-0 flex h-12 w-12 items-center justify-center rounded-full bg-extend-red"
+                class="darl:bg-extend-red absolute -left-[4.25rem] top-0 flex h-12 w-12 items-center justify-center rounded-full bg-blue-700 dark:bg-extend-red"
               >
                 <img
                   class="h-6 w-6 opacity-90 hover:opacity-100"
-                  src="./images/work_32.png?as=webp"
+                  src="./images/work_32.svg?as=webp"
                   alt="work"
                   loading="lazy"
                   width="1.5rem"
@@ -571,13 +640,15 @@
               <h3 class="mb-2 text-lg">
                 <span id="currentJobPeriod">3 yrs 6 mos</span>
                 &nbsp;
-                <span class="text-extend-red"> 2019 - 2023 </span>
+                <span class="text-sm text-blue-700 dark:text-extend-red">
+                  2019 - 2023
+                </span>
               </h3>
-              <h3 class="text-xl font-bold text-extend-teal">
+              <h3 class="text-xl font-bold text-blue-700 dark:text-extend-teal">
                 Software Engineer
               </h3>
               <p class="mb-2">- Trend Micro</p>
-              <ul class="list-inside list-disc">
+              <ul class="list-outside list-disc pl-4">
                 <li>
                   Developed an expense solution with React.js and Formily (a
                   low-code framework) in Microsoft Teams, which supports
@@ -599,11 +670,11 @@
             </div>
             <div class="relative basis-full">
               <div
-                class="absolute -left-[4.25rem] top-0 flex h-12 w-12 items-center justify-center rounded-full bg-extend-red"
+                class="absolute -left-[4.25rem] top-0 flex h-12 w-12 items-center justify-center rounded-full bg-blue-700 dark:bg-extend-red"
               >
                 <img
                   class="h-6 w-6 opacity-90 hover:opacity-100"
-                  src="./images/work_32.png?as=webp"
+                  src="./images/work_32.svg?as=webp"
                   alt="work"
                   loading="lazy"
                   width="1.5rem"
@@ -612,13 +683,15 @@
               </div>
               <h3 class="mb-2 text-lg">
                 2 yrs 5 mos &nbsp;
-                <span class="text-extend-red"> 2017 - 2019 </span>
+                <span class="text-sm text-blue-700 dark:text-extend-red">
+                  2017 - 2019
+                </span>
               </h3>
-              <h3 class="text-xl font-bold text-extend-teal">
+              <h3 class="text-xl font-bold text-blue-700 dark:text-extend-teal">
                 Frontend Engineer
               </h3>
               <p class="mb-2">- Carenet Plus</p>
-              <ul class="list-inside list-disc">
+              <ul class="list-outside list-disc pl-4">
                 <li>
                   Built web-based senior care system with reporting, form
                   generation, alarm, and tracking functionality, achieving 30%
@@ -638,11 +711,11 @@
             </div>
             <div class="relative basis-full">
               <div
-                class="absolute -left-[4.25rem] top-0 flex h-12 w-12 items-center justify-center rounded-full bg-extend-red"
+                class="absolute -left-[4.25rem] top-0 flex h-12 w-12 items-center justify-center rounded-full bg-blue-700 dark:bg-extend-red"
               >
                 <img
                   class="h-6 w-6 opacity-90 hover:opacity-100"
-                  src="./images/work_32.png?as=webp"
+                  src="./images/work_32.svg?as=webp"
                   alt="work"
                   loading="lazy"
                   width="1.5rem"
@@ -651,13 +724,15 @@
               </div>
               <h3 class="mb-2 text-lg">
                 1 yr &nbsp;
-                <span class="text-extend-red"> 2016 - 2017 </span>
+                <span class="text-sm text-blue-700 dark:text-extend-red">
+                  2016 - 2017
+                </span>
               </h3>
-              <h3 class="text-xl font-bold text-extend-teal">
+              <h3 class="text-xl font-bold text-blue-700 dark:text-extend-teal">
                 Software Engineer
               </h3>
               <p class="mb-2">- Smart eVision</p>
-              <ul class="list-inside list-disc">
+              <ul class="list-outside list-disc pl-4">
                 <li>
                   Developed draggable D3.js web controls that increased BI
                   dashboard data visualization.
@@ -674,7 +749,7 @@
             </div>
             <div class="relative basis-full">
               <div
-                class="absolute -left-[4.25rem] top-0 flex h-12 w-12 items-center justify-center rounded-full bg-extend-red"
+                class="darl:bg-extend-red absolute -left-[4.25rem] top-0 flex h-12 w-12 items-center justify-center rounded-full bg-blue-700 dark:bg-extend-red"
               >
                 <img
                   class="h-6 w-6 opacity-90 hover:opacity-100"
@@ -687,13 +762,15 @@
               </div>
               <h3 class="mb-2 text-lg">
                 4 yrs &nbsp;
-                <span class="text-extend-red"> 2011 - 2015 </span>
+                <span class="text-sm text-blue-700 dark:text-extend-red">
+                  2011 - 2015
+                </span>
               </h3>
-              <h3 class="text-xl font-bold text-extend-teal">
+              <h3 class="text-xl font-bold text-blue-700 dark:text-extend-teal">
                 Ming Chi University of Technology
               </h3>
               <p class="mb-2">- Bachelor of Science</p>
-              <ul class="list-inside list-disc">
+              <ul class="list-outside list-disc pl-4">
                 <li>
                   Computer Programming, System Analysis& Design, Database, Human
                   Factors Engineering, E-Commerce, Smart factory, Factors
@@ -706,12 +783,14 @@
           </div>
         </div>
       </div>
-      <div class="h-36"></div>
+      <div class="h-20"></div>
       <div id="project">
-        <h2 class="my-12 text-5xl font-bold">Project</h2>
+        <h2 class="my-20 text-5xl font-bold">
+          <a href="#project" id="project">Project</a>
+        </h2>
         <div class="flex flex-col gap-4">
           <div
-            class="group flex basis-full flex-row flex-wrap gap-2 p-8 transition hover:shadow-[0px_0px_4px_#f72a50] lg:flex-nowrap lg:gap-28"
+            class="dark:hover:shadow-extend-dark-shadow group flex basis-full flex-row flex-wrap gap-2 p-8 transition hover:shadow-[0px_0px_3px] hover:shadow-blue-700 lg:flex-nowrap lg:gap-28"
           >
             <div class="flex basis-full lg:basis-1/2">
               <img
@@ -731,12 +810,12 @@
                   aria-label="github-gympool"
                 >
                   <img
-                    src="./images/github.svg"
-                    class="inline-block w-8 opacity-90 hover:opacity-100"
+                    src="./images/github.svg?as=webp"
+                    class="inline-block w-6 opacity-90 invert hover:opacity-100 dark:invert-0"
                     alt="github"
                     loading="lazy"
-                    width="2rem"
-                    height="2rem"
+                    width="1.5rem"
+                    height="1.5rem"
                   />
                 </a>
                 <a
@@ -745,17 +824,21 @@
                   aria-label="link-gympool"
                 >
                   <img
-                    src="./images/IcBaselineOpenInNew.svg"
-                    class="inline-block w-8 opacity-90 hover:opacity-100"
+                    src="./images/IcBaselineOpenInNew.svg?as=webp"
+                    class="inline-block w-6 opacity-90 invert hover:opacity-100 dark:invert-0"
                     alt="openInNew"
                     loading="lazy"
-                    width="2rem"
-                    height="2rem"
+                    width="1.5rem"
+                    height="1.5rem"
                   />
                 </a>
               </div>
               <div class="mb-2">
-                <h3 class="mb-2 text-2xl text-extend-red">Gym Pool</h3>
+                <h3
+                  class="mb-2 text-2xl font-bold text-blue-700 dark:text-extend-red"
+                >
+                  Gym Pool
+                </h3>
 
                 <p class="mb-8 text-ellipsis">
                   Developed a hobby side project provide a full-stack web
@@ -763,52 +846,52 @@
                 </p>
                 <div class="flex flex-wrap gap-2 text-xs">
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     Next.js
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     React</span
                   >
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     TailwindCSS
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     Python
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     FastAPI
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     PostgreSQL
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     NGINX
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     Docker
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     CI/CD
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     GCR
                   </span>
@@ -817,7 +900,7 @@
             </div>
           </div>
           <div
-            class="group flex basis-full flex-row flex-wrap gap-2 p-8 transition hover:shadow-[0px_0px_4px_#f72a50] lg:flex-nowrap lg:gap-28"
+            class="dark:hover:shadow-extend-dark-shadow group flex basis-full flex-row flex-wrap gap-2 p-8 transition hover:shadow-[0px_0px_3px] hover:shadow-blue-700 lg:flex-nowrap lg:gap-28"
           >
             <div class="flex basis-full lg:basis-1/2">
               <img
@@ -838,16 +921,18 @@
                 >
                   <img
                     src="./images/icons8-invisible-30.png?as=webp"
-                    class="inline-block w-8 opacity-90 hover:opacity-100"
+                    class="inline-block w-6 opacity-90 invert hover:opacity-100 dark:invert-0"
                     alt="private"
                     loading="lazy"
-                    width="2rem"
-                    height="2rem"
+                    width="1.5rem"
+                    height="1.5rem"
                   />
                 </span>
               </div>
               <div class="mb-2">
-                <h3 class="mb-2 text-2xl text-extend-red">
+                <h3
+                  class="mb-2 text-2xl font-bold text-blue-700 dark:text-extend-red"
+                >
                   Algorithmic trading
                 </h3>
 
@@ -857,32 +942,32 @@
                 </p>
                 <div class="flex flex-wrap gap-2 text-xs">
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     Python
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     TA-Lib
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     Pandas
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     Flask
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     PostgreSQL
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     NGINX
                   </span>
@@ -891,7 +976,7 @@
             </div>
           </div>
           <div
-            class="group flex basis-full flex-row flex-wrap gap-2 p-8 transition hover:shadow-[0px_0px_4px_#f72a50] lg:flex-nowrap lg:gap-28"
+            class="dark:hover:shadow-extend-dark-shadow group flex basis-full flex-row flex-wrap gap-2 p-8 transition hover:shadow-[0px_0px_3px] hover:shadow-blue-700 lg:flex-nowrap lg:gap-28"
           >
             <div class="flex basis-full lg:basis-1/2">
               <img
@@ -911,12 +996,12 @@
                   aria-label="github-zhuyin2pinyin"
                 >
                   <img
-                    src="./images/github.svg"
-                    class="inline-block w-8 opacity-90 hover:opacity-100"
+                    src="./images/github.svg?as=webp"
+                    class="inline-block w-6 opacity-90 invert hover:opacity-100 dark:invert-0"
                     alt="github"
                     loading="lazy"
-                    width="2rem"
-                    height="2rem"
+                    width="1.5rem"
+                    height="1.5rem"
                   />
                 </a>
                 <a
@@ -925,17 +1010,21 @@
                   aria-label="link-zhuyin2pinyin"
                 >
                   <img
-                    src="./images/IcBaselineOpenInNew.svg"
-                    class="inline-block w-8 opacity-90 hover:opacity-100"
+                    src="./images/IcBaselineOpenInNew.svg?as=webp"
+                    class="inline-block w-6 opacity-90 invert hover:opacity-100 dark:invert-0"
                     alt="openInNew"
                     loading="lazy"
-                    width="2rem"
-                    height="2rem"
+                    width="1.5rem"
+                    height="1.5rem"
                   />
                 </a>
               </div>
               <div class="mb-2">
-                <h3 class="mb-2 text-2xl text-extend-red">Zhuyin2pinyin</h3>
+                <h3
+                  class="mb-2 text-2xl font-bold text-blue-700 dark:text-extend-red"
+                >
+                  Zhuyin2pinyin
+                </h3>
                 <p class="mb-8 text-ellipsis">
                   It's a great way for beginners to learn Pinyin IME by
                   converting Zhuyin to Pinyin. It's easy to use and convenient,
@@ -944,22 +1033,22 @@
                 </p>
                 <div class="flex flex-wrap gap-2 text-xs">
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     Vue.js
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     SPA
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     Tool
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     Learning
                   </span>
@@ -968,7 +1057,7 @@
             </div>
           </div>
           <div
-            class="group flex basis-full flex-row flex-wrap gap-2 p-8 transition hover:shadow-[0px_0px_4px_#f72a50] lg:flex-nowrap lg:gap-28"
+            class="dark:hover:shadow-extend-dark-shadow group flex basis-full flex-row flex-wrap gap-2 p-8 transition hover:shadow-[0px_0px_3px] hover:shadow-blue-700 lg:flex-nowrap lg:gap-28"
           >
             <div class="flex basis-full lg:basis-1/2">
               <img
@@ -988,12 +1077,12 @@
                   aria-label="github-snake"
                 >
                   <img
-                    src="./images/github.svg"
-                    class="inline-block w-8 opacity-90 hover:opacity-100"
+                    src="./images/github.svg?as=webp"
+                    class="inline-block w-6 opacity-90 invert hover:opacity-100 dark:invert-0"
                     alt="github"
                     loading="lazy"
-                    width="2rem"
-                    height="2rem"
+                    width="1.5rem"
+                    height="1.5rem"
                   />
                 </a>
                 <a
@@ -1002,29 +1091,33 @@
                   aria-label="link-snake"
                 >
                   <img
-                    src="./images/IcBaselineOpenInNew.svg"
-                    class="inline-block w-8 opacity-90 hover:opacity-100"
+                    src="./images/IcBaselineOpenInNew.svg?as=webp"
+                    class="inline-block w-6 opacity-90 invert hover:opacity-100 dark:invert-0"
                     alt="openInNew"
                     loading="lazy"
-                    width="2rem"
-                    height="2rem"
+                    width="1.5rem"
+                    height="1.5rem"
                   />
                 </a>
               </div>
               <div class="mb-2">
-                <h3 class="mb-2 text-2xl text-extend-red">Snake</h3>
+                <h3
+                  class="mb-2 text-2xl font-bold text-blue-700 dark:text-extend-red"
+                >
+                  Snake
+                </h3>
                 <p class="mb-8 text-ellipsis">
                   A classic game SNAKE implemented by Angular framework. Moving
                   block elements smoothly to simulate animation effect.
                 </p>
                 <div class="flex flex-wrap gap-2 text-xs">
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     Angular
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     Game
                   </span>
@@ -1033,7 +1126,7 @@
             </div>
           </div>
           <div
-            class="group flex basis-full flex-row flex-wrap gap-2 p-8 transition hover:shadow-[0px_0px_4px_#f72a50] lg:flex-nowrap lg:gap-28"
+            class="dark:hover:shadow-extend-dark-shadow group flex basis-full flex-row flex-wrap gap-2 p-8 transition hover:shadow-[0px_0px_3px] hover:shadow-blue-700 lg:flex-nowrap lg:gap-28"
           >
             <div class="flex basis-full lg:basis-1/2">
               <img
@@ -1053,12 +1146,12 @@
                   aria-label="github-my-bike"
                 >
                   <img
-                    src="./images/github.svg"
-                    class="inline-block w-8 opacity-90 hover:opacity-100"
+                    src="./images/github.svg?as=webp"
+                    class="inline-block w-6 opacity-90 invert hover:opacity-100 dark:invert-0"
                     alt="github"
                     loading="lazy"
-                    width="2rem"
-                    height="2rem"
+                    width="100%"
+                    height="100%"
                   />
                 </a>
                 <a
@@ -1067,17 +1160,19 @@
                   aria-label="link-my-bike"
                 >
                   <img
-                    src="./images/IcBaselineOpenInNew.svg"
-                    class="inline-block w-8 opacity-90 hover:opacity-100"
+                    src="./images/IcBaselineOpenInNew.svg?as=webp"
+                    class="inline-block w-6 opacity-90 invert hover:opacity-100 dark:invert-0"
                     alt="openInNew"
                     loading="lazy"
-                    width="2rem"
-                    height="2rem"
+                    width="100%"
+                    height="100%"
                   />
                 </a>
               </div>
               <div class="mb-2">
-                <h3 class="mb-2 text-2xl text-extend-red">
+                <h3
+                  class="mb-2 text-2xl font-bold text-blue-700 dark:text-extend-red"
+                >
                   Routing for shared bike
                 </h3>
                 <p class="mb-8 text-ellipsis">
@@ -1086,22 +1181,22 @@
                 </p>
                 <div class="flex flex-wrap gap-2 text-xs">
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     React.js
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     Tool
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     SPA
                   </span>
                   <span
-                    class="rounded-full px-2 py-0.5 shadow-[0px_0px_4px_#f72a50]"
+                    class="dark:shadow-extend-dark-shadow rounded-full px-2 py-0.5 shadow-[0px_0px_3px] shadow-blue-700"
                   >
                     Dark Mode
                   </span>
@@ -1113,5 +1208,12 @@
       </div>
       <div class="h-36"></div>
     </div>
+    <img
+      src="./images/wave.svg?as=webp"
+      alt="wave"
+      class="dark:invert lg:hidden"
+      width="100%"
+      height="100%"
+    />
   </body>
 </html>
