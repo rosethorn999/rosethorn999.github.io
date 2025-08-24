@@ -1,19 +1,29 @@
 import './index.css';
 
-// const calcCurrentJobPeriod = () => {
-//   const current = new Date();
-//   const trendmicroOnBoardingDate = new Date(2019, 10, 13);
-//   const x = current.getFullYear() - trendmicroOnBoardingDate.getFullYear() - 1;
-//   const y = Math.abs(
-//     current.getMonth() + (12 - trendmicroOnBoardingDate.getMonth()) + 1
-//   );
-//   const elem =
-//     window.document.querySelector<HTMLInputElement>('#currentJobPeriod');
-//   if (elem) {
-//     elem.innerText = `${x} yrs ${y} mos`;
-//   }
-// };
-// calcCurrentJobPeriod();
+function getYearsAndMonths(startDate: Date, endDate: Date = new Date()) {
+  let years = endDate.getFullYear() - startDate.getFullYear();
+  let months = endDate.getMonth() - startDate.getMonth();
+
+  if (endDate.getDate() < startDate.getDate()) {
+    months--;
+  }
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+
+  return { years: years, months: months };
+}
+
+const calcCurrentJobPeriod = () => {
+  const { years, months } = getYearsAndMonths(new Date(2024, 4, 28));
+  const elem =
+    window.document.querySelector<HTMLInputElement>('#currentJobPeriod');
+  if (elem) {
+    elem.innerText = `${years} yrs ${months} mos`;
+  }
+};
+calcCurrentJobPeriod();
 
 // On page load or when changing themes, best to add inline in `head` to avoid FOUC
 if (
